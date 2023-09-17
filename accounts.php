@@ -16,18 +16,34 @@
     <table>
     <tr>
         <th>ID</th>
+        <th>acc_number</th>
         <th>acc_type</th>
         <th>Balance</th>
         <th>Currency</th>
         <th>Owner</th>
     </tr>
-    <tr>
-        <td>1</td>
-        <td>Checking</td>
-        <td>500</td>
-        <td>NOK</td>
-        <td>Jake</td>
-    </tr>
+
+    <?php
+    include_once "connect.php";
+
+    if (!$conn) {
+        die("Connection failed: " . mysqli_connect_error());
+    }
+
+    $sql = "SELECT * FROM accounts";
+    $result = mysqli_query($conn, $sql);
+    while($row = mysqli_fetch_assoc($result)){ ?>
+        <tr>
+        <td><?php echo $row["id"]; ?></td>
+        <td><?php echo $row["account_number"]; ?></td>
+        <td><?php echo $row["account_type"]; ?></td>
+        <td><?php echo $row["balance"]; ?></td>
+        <td><?php echo $row["currency"]; ?></td>
+        <td><?php echo $row["owner"]; ?></td>
+        </tr>
+    <?php
+    }
+    ?>
     </table>
     </main>
 </body>
