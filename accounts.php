@@ -26,6 +26,7 @@
         <th>Balance</th>
         <th>Currency</th>
         <th>Owner</th>
+        <th>Savings goal</th>
     </tr>
 
     <?php
@@ -45,6 +46,7 @@
         <td><?php echo $row["balance"]; ?></td>
         <td><?php echo $row["currency"]; ?></td>
         <td><?php echo $row["owner"]; ?></td>
+        <td><?php echo $row["goal"]; ?></td>
         </tr>
     <?php
     }
