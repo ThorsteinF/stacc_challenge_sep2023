@@ -7,5 +7,12 @@
 </head>
 <body>
     <h1> Stacc challenge September 2023 </h1>
+    <?php
+    include_once "connect.php";
+
+    if (!$conn) {
+        die("Connection failed:" . mysqli_connect_error())
+    }
+    ?>
 </body>
 </html>
