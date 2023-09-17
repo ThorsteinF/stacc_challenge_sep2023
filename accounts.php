@@ -3,24 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Savings</title>
 </head>
 <body>
-    <h1> Savings </h1>
-    <?php
-    include_once "connect.php";
+    <header>
+        <h1> Stacc challenge 2023 </h1>
+    </header>
+    <main>
+        <h1 id = "title"> Accounts </h1>
 
-    if (!$conn) {
-        die("Connection failed: " . mysqli_connect_error());
-    }
-
-    $query = "SELECT * FROM accounts";
-    $result = mysql_query($query);
-    while($row = mysql_fetch_assoc($result)){
-        foreach($row as $key => $val){
-            echo $key . ": " . $val . "<BR />";
-        }
-    }
-    ?>
+    <table>
+    <tr>
+        <th>ID</th>
+        <th>acc_type</th>
+        <th>Balance</th>
+        <th>Currency</th>
+        <th>Owner</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>Checking</td>
+        <td>500</td>
+        <td>NOK</td>
+        <td>Jake</td>
+    </tr>
+    </table>
+    </main>
 </body>
 </html>

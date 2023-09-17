@@ -6,7 +6,7 @@
     <title>Savings app</title>
 </head>
 <body>
-    <h1> Stacc challenge September 2023 </h1>
+    <h1 class = "> Stacc challenge September 2023 </h1>
     <?php
     include_once "connect.php";
 
