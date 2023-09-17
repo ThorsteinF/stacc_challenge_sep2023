@@ -11,8 +11,13 @@
         <h1> Stacc challenge 2023 </h1>
     </header>
     <main>
+        <div id = "links">
+            <a href = "index.php"> HOME </a>
+            <a href = "accounts.php" id = "current"> ACCOUNTS </a>
+            <a href = "transactions.php"> TRANSACTINOS </a>
+        </div>
         <h1 id = "title"> Accounts </h1>
-
+        
     <table>
     <tr>
         <th>ID</th>
@@ -45,6 +50,12 @@
     }
     ?>
     </table>
+
+    <form action="add.php" method="POST">
+        <input type="text" name="id" id="id" required placeholder = "Account ID">
+        <input type="number" name="amount" id="amount" required placeholder="Savings goal">
+        <input type="submit" id = "button" value="Update savings goal">
+    </form>
     </main>
 </body>
 </html>
