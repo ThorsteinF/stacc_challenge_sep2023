@@ -7,12 +7,30 @@
 }
 
 header  {
-    background-color: #afffab;
+    background-color: #a6e0bd;
     text-align: center;
     min-height: 150px;
     margin: auto;
     line-height: 150px;
 }
+
+body {
+    background-image: url('https://i.pinimg.com/736x/a3/60/97/a3609776240d1aede532bac3fe455eef.jpg');
+    background-size: cover;
+    position: relative;	
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: inherit;
+    filter: blur(10px); /* Apply the blur effect to the background image */
+    z-index: -1;
+}	
 
 main {
     text-align: center;
@@ -21,13 +39,25 @@ main {
 main table {
     border-collapse: collapse;
     margin-left:auto;
-    margin-right:auto;  
+    margin-right:auto;
+    margin-top: 20px;  
+    background-color: white;
+    border: 2px solid black;
+    box-shadow: 13px 12px 81px 6px rgba(0,0,0,0.75);
+
 }
 
 main td, th {
     border: 2px solid black;
     padding: 10px;
 }
+
+main th {
+    background-color: darkcyan;
+    color: white;
+}
+
+main tr:nth-child(even) {background-color: lightgray;}
 
 main #title {
     font-size: 50p;
@@ -39,7 +69,7 @@ input {
 }
 
 #links {
-    background-color: aquamarine;
+    background-color: #9ad8e6;
     padding: 10px;
 }
 

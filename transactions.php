@@ -16,7 +16,6 @@
             <a href = "accounts.php"> ACCOUNTS </a>
             <a href = "transactions.php" id = "current"> TRANSACTINOS </a>
     </div>
-    <h1 id = "title"> Transactions </h1>
     <table>
     <tr>
         <th>ID</th>

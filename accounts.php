@@ -16,8 +16,6 @@
             <a href = "accounts.php" id = "current"> ACCOUNTS </a>
             <a href = "transactions.php"> TRANSACTINOS </a>
         </div>
-        <h1 id = "title"> Accounts </h1>
-        
     <table>
     <tr>
         <th>ID</th>
@@ -27,6 +25,7 @@
         <th>Currency</th>
         <th>Owner</th>
         <th>Savings goal</th>
+        <th>Progress</th>
     </tr>
 
     <?php
@@ -47,6 +46,37 @@
         <td><?php echo $row["currency"]; ?></td>
         <td><?php echo $row["owner"]; ?></td>
         <td><?php echo $row["goal"]; ?></td>
+        <td><?php $progress = $row["balance"]/$row["goal"];
+
+                  if ($row["goal"] == 0) {
+                      echo "-";
+                  }
+                  elseif ($progress >= 1) {
+                      echo "<p>Goal reached!</p>";
+                      echo "<img src = 'img/cat6.jpg' height = '100px' width = '100px'>";
+                  }
+                  elseif ($progress > 0.8) {
+                      echo round($progress*100) . "% <br>";
+                      echo "<img src = 'img/cat5.jpg' height = '150px' width = '150px'>";
+                  }
+                  elseif ($progress > 0.6) {
+                      echo round($progress*100) . "% <br>";
+                      echo "<img src = 'img/cat4.jpg' height = '100px' width = '100px'>";
+                  }
+                  elseif ($progress > 0.4) {
+                      echo round($progress*100) . "% <br>";
+                      echo "<img src = 'img/cat3.jpg' height = '150px' width = '150px'>";
+                  }
+                  elseif ($progress > 0.2) {
+                      echo round($progress*100) . "% <br>";
+                      echo "<img src = 'img/cat2.jpg' height = '100px' width = '100px'>";
+                  }
+                  else {
+                      echo "<p>OVER 0.0</p>";
+                      echo "<img src = 'img/cat1.jpg' height = '100px' width = '100px'>";
+                  }
+
+?></td>
         </tr>
     <?php
     }
