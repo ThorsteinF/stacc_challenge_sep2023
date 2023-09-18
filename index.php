@@ -24,7 +24,6 @@
        how far they have gotten with their savings goal! It is possible to alter the savings goal if needed. Press the "accounts" tab to get started. 
        The source code and documentation can be found <a href = "https://github.com/ThorsteinF/stacc_challenge_sep2023">HERE</a></p>
 </div>
-
 </main>
 </body>
 </html>

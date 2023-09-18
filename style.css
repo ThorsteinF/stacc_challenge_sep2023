@@ -7,7 +7,7 @@
 }
 
 header  {
-    background-color: #a6e0bd;
+    background-color: #13F19B;
     text-align: center;
     min-height: 150px;
     margin: auto;
@@ -150,8 +150,14 @@ main table td img {
     margin-right: auto;
     margin-top: 20px;
     padding: 20px;
-    background-color: white;
+    background-color: transparent;
     max-width: 400px;
     border-radius: 20px;
     box-shadow: 10px 10px 157px -25px rgba(0,0,0,0.75);
+    
+ }
+
+.textbox:hover {
+    background: linear-gradient(-45deg, #f9fd50 0%, #00bd56 100% );
 }
+
