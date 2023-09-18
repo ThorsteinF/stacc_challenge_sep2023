@@ -17,6 +17,14 @@
     <a href = "accounts.php"> ACCOUNTS </a>
     <a href = "transactions.php"> TRANSACTINOS </a>
 </div>
+
+<div class="textbox">
+    <h3>This is my solution to the September 2023 Stacc challenge!</h3>
+    <p>Getting people to save more money can be challenging! That's why I decided to motivate each customer with a motivational image showing
+       how far they have gotten with their savings goal! It is possible to alter the savings goal if needed. Press the "accounts" tab to get started. 
+       The source code and documentation can be found <a href = "https://github.com/ThorsteinF/stacc_challenge_sep2023">HERE</a></p>
+</div>
+
 </main>
 </body>
 </html>

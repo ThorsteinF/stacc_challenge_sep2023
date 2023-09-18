@@ -43,14 +43,21 @@ main table {
     margin-right:auto;
     margin-top: 20px;  
     background-color: white;
-    border: 2px solid black;
+    border-radius: 20px;
     box-shadow: 13px 12px 81px 6px rgba(0,0,0,0.75);
 
 }
 
 main td, th {
-    border: 2px solid black;
     padding: 10px;
+}
+
+table th:first-child{
+  border-radius: 10px 0 0 0;
+}
+
+table th:last-child{
+  border-radius:0 10px 0 0;
 }
 
 main th {
@@ -76,20 +83,27 @@ input {
 }
 
 #links a {
-    padding: 5px;
-    color: black;
+    display: inline-block; /* Change to inline-block */
+    padding: 10px 20px;
+    background-color: #25b96f; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none; /* Remove text underline */
     font-size: 20px;
-    text-decoration: none;
+    margin-right: 10px; /* Add some spacing between buttons */
 }
 
-#links a:hover{
-    color: #009463;
+#links a:hover {
+    background-color: #069c50; /* Button background color on hover */
+    color: #ffffff; /* Button text color on hover */
     transition: 0.2s;
 }
-
 #links #current {
     font-weight: bold;
-    text-decoration: solid underline purple 4px
+    
 }
 
 main table td img {
@@ -97,23 +111,47 @@ main table td img {
     width: 150px;
 }
 
-main #button {
-outline: 0;
-  display: inline-flex;
-  align-items: center;
-  justify-content: space-between;
-  background: #40B3A2;
-  min-width: 200px;
-  border: 0;
-  border-radius: 4px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, .1);
-  box-sizing: border-box;
-  padding: 16px 20px;
+#button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #26baee;
   color: #fff;
-  font-size: 12px;
-  font-weight: 600;
-  letter-spacing: 1.2px;
-  text-transform: uppercase;
-  overflow: hidden;
+  border: none;
+  border-radius: 3px;
   cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Animation styles for the button when clicked */
+#button:active {
+  animation: shine 0.5s;
+}
+
+/* Keyframes animation for the shine effect */
+@keyframes shine {
+  0% {
+    background-color: #9fe8fa;
+    transform: scale(1);
+  }
+
+  50% {
+    background-color: #9fe8fa;
+    transform: scale(1.1);
+  }
+
+  100% {
+    background-color: #9fe8fa;
+    transform: scale(1);
+  }
+}
+
+.textbox {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: white;
+    max-width: 400px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 157px -25px rgba(0,0,0,0.75);
 }
