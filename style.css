@@ -15,7 +15,7 @@ header  {
 }
 
 body {
-    background-image: url('https://i.pinimg.com/736x/a3/60/97/a3609776240d1aede532bac3fe455eef.jpg');
+    background-image: url('img/bg.svg');
     background-size: cover;
     position: relative;	
 }
@@ -23,6 +23,7 @@ body {
 body::before {
     content: "";
     position: absolute;
+    background-size: cover;
     top: 0;
     left: 0;
     right: 0;
