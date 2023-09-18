@@ -1,6 +1,6 @@
 # Stacc challenge September 2023
 
-This is my solution to the September 2023 Stacc challenge:
+This is my back-end solution to the September 2023 Stacc challenge:
 
 Technical details
 -
