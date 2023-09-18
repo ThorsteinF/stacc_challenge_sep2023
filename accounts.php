@@ -53,27 +53,27 @@
                   }
                   elseif ($progress >= 1) {
                       echo "<p>Goal reached!</p>";
-                      echo "<img src = 'img/cat6.jpg' height = '100px' width = '100px'>";
+                      echo "<img src = 'img/cat6.gif' height = '150px' width = '150px'>";
                   }
                   elseif ($progress > 0.8) {
                       echo round($progress*100) . "% <br>";
-                      echo "<img src = 'img/cat5.jpg' height = '150px' width = '150px'>";
+                      echo "<img src = 'img/cat5.jpg'>";
                   }
                   elseif ($progress > 0.6) {
                       echo round($progress*100) . "% <br>";
-                      echo "<img src = 'img/cat4.jpg' height = '100px' width = '100px'>";
+                      echo "<img src = 'img/cat4.jpg'>";
                   }
                   elseif ($progress > 0.4) {
                       echo round($progress*100) . "% <br>";
-                      echo "<img src = 'img/cat3.jpg' height = '150px' width = '150px'>";
+                      echo "<img src = 'img/cat3.jpg'>";
                   }
                   elseif ($progress > 0.2) {
                       echo round($progress*100) . "% <br>";
-                      echo "<img src = 'img/cat2.jpg' height = '100px' width = '100px'>";
+                      echo "<img src = 'img/cat2.jpg'>";
                   }
                   else {
-                      echo "<p>OVER 0.0</p>";
-                      echo "<img src = 'img/cat1.jpg' height = '100px' width = '100px'>";
+                      echo round($progress*100) . "% <br>";
+                      echo "<img src = 'img/cat1.jpg'>";
                   }
 
 ?></td>

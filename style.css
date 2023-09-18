@@ -65,6 +65,7 @@ main #title {
 
 input {
     margin-top: 50px;
+    margin-bottom: 50px;
     padding: 20px;
 }
 
@@ -88,4 +89,30 @@ input {
 #links #current {
     font-weight: bold;
     text-decoration: solid underline purple 4px
+}
+
+main table td img {
+    height: 150px;
+    width: 150px;
+}
+
+main #button {
+outline: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #40B3A2;
+  min-width: 200px;
+  border: 0;
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, .1);
+  box-sizing: border-box;
+  padding: 16px 20px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  overflow: hidden;
+  cursor: pointer;
 }
